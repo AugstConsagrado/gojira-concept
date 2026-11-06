@@ -1,4 +1,11 @@
 node_modules/
 .env
 .env.*
+!.env.example
 *.log
+/work/
+/*.jpg
+/*.png
+/*.zip
+Thumbs.db
+.DS_Store

@@ -1,0 +1,14 @@
+{
+  "name": "gojira-concept",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Conceito editorial independente de apresentação do Gojira",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,74 @@
+/* Interface monocromática. As capas são preservadas como distribuídas no catálogo. */
+:root{--ink:#111111;--paper:#eeeeee;--muted:#aaaaaa;--acid:#dedede;--line:#ffffff30}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline-color:currentColor}
+.album-listen{display:block;min-width:0}
+.album-art img{object-fit:contain;background:#101010}
+.album-art:after{content:'OUVIR ÁLBUM ↗'}
+.album-card{cursor:default}
+.album-title{line-height:1.35;min-height:42px;align-items:start}
+.album-title small{padding-top:4px;flex-shrink:0}
+.album-listen:focus-visible .album-art:after{transform:translateY(0)}
+.album-detail{font-size:11px;min-height:44px;padding:8px 0;text-decoration:underline;text-underline-offset:5px;color:#cecece}
+.album-detail:hover{text-underline-offset:8px}
+.album-track-links{margin:23px 0 10px;padding-top:18px;border-top:1px solid #b7b7b7;display:flex;flex-wrap:wrap;gap:8px 16px}
+.album-track-links>.small-label{flex-basis:100%;margin-bottom:3px}
+.album-track-links>a{font-size:12px;min-height:35px;display:inline-flex;align-items:center;text-decoration:underline;text-underline-offset:4px}
+.timeline-instruction{font-size:11px;color:#5d5d5d;margin:0 0 16px}
+.timeline-tabs{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#707070 #dedede;padding:0 2px 7px;scroll-padding-inline:10px;gap:14px}
+.timeline-tabs button{flex:0 0 clamp(72px,7vw,100px)}
+.milestone-detail p+p{margin-top:15px}
+.context-source{display:inline-flex;align-items:center;min-height:44px;line-height:1.5;font-size:11px;text-decoration:underline;text-underline-offset:5px}
+.milestone-detail>.context-source{margin-top:17px;color:#454545}
+.journey-note{font-size:11px;max-width:680px;color:#5d5d5d;border-top:1px solid #b1b1b1;padding-top:22px;margin-top:30px}
+.message-stories{position:relative;z-index:2;margin-top:75px;border-top:1px solid #777777}
+.message-story{display:grid;grid-template-columns:1fr 1fr;gap:8vw;border-bottom:1px solid #777777;padding:45px 0}
+.message-identity .small-label{color:#c5c5c5;margin-bottom:22px}
+.message-identity h3{font-size:clamp(30px,3.2vw,48px);font-weight:400;line-height:1.15;letter-spacing:-1.3px;overflow-wrap:anywhere}
+.song-album{font-size:9px;color:#cccccc;margin-top:18px;letter-spacing:1px;line-height:1.8}
+.message-context{max-width:510px;font-size:13px;color:#e3e3e3}
+.message-context p+p{margin-top:17px}
+.message-links{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:23px}
+.song-link{display:inline-flex;align-items:center;gap:28px;min-height:44px;font-size:12px;border-bottom:1px solid #b4b4b4}
+.song-link span{font-size:22px;transition:transform .35s}
+.song-link:hover span{transform:translate(5px,-5px)}
+.message-links .context-source{color:#bfbfbf;font-size:10px}
+.manifesto>.light{position:relative;z-index:2;margin-left:0;margin-top:35px}
+.manifesto-art{color:#ffffff24}
+
+/* A revisão do enquadramento é específica de PC/tablet amplo.
+   A posição e as dimensões da abertura móvel aprovada permanecem no stylesheet base. */
+@media(min-width:721px){
+  .hero{height:auto;min-height:100svh;max-height:none;padding:118px 5vw 30px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-content:start;column-gap:4vw;background:#111111}
+  .hero-backdrop{background:linear-gradient(135deg,#1b1b1b,#090909)}
+  .hero-backdrop img{display:none}
+  .hero-backdrop:after{background:none}
+  .hero-kicker{position:relative;top:auto;left:auto;grid-column:1/-1;font-size:10px;line-height:1.5}
+  .hero h1{position:relative;top:auto;left:auto;grid-column:1/-1;font-size:clamp(150px,18vw,320px);line-height:.92;margin:18px 0 28px;color:#eeeeee}
+  .hero-portrait{position:relative;top:auto;right:auto;grid-column:2;grid-row:3;width:min(100%,64vh);height:auto;aspect-ratio:1280/853;transform:none;justify-self:end;align-self:center;background:none;overflow:visible}
+  .hero-portrait img{width:100%;height:auto;aspect-ratio:1280/853;object-fit:contain;object-position:center;transform:none;filter:grayscale(1) brightness(.95)}
+  .hero-portrait:hover img{transform:none;filter:grayscale(1) brightness(1)}
+  .hero-editorial{position:relative;top:auto;left:auto;grid-column:1;grid-row:3;align-self:center;font-size:clamp(38px,5.7vw,92px);line-height:1.02;letter-spacing:-.055em}
+  .hero-editorial em{font-size:1.12em}
+  .hero-bottom{position:relative;bottom:auto;left:auto;right:auto;grid-column:1/-1;margin-top:32px;padding-top:23px}
+  .hero-side-note{right:-3vw;bottom:25px}
+}
+@media(max-width:720px){
+  .album-title{min-height:45px}
+  .album-detail{font-size:11px;min-height:44px}
+  .timeline-tabs{gap:9px}
+  .timeline-tabs button{flex-basis:72px}
+  .timeline-instruction{font-size:10px;max-width:260px}
+  .journey-note{font-size:10px}
+  .message-stories{margin-top:50px}
+  .message-story{grid-template-columns:1fr;gap:24px;padding:34px 0}
+  .message-identity .small-label{margin-bottom:15px}
+  .message-identity h3{font-size:31px;letter-spacing:-.9px}
+  .song-album{font-size:8px;margin-top:14px}
+  .message-context{font-size:13px}
+  .message-links{gap:10px;margin-top:18px}
+  .message-links .context-source{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){.song-link span{transition:none}}
+
+/* Reserva espaço aos botões também em notebooks de menor altura. */
+.pinned .album-card{width:clamp(190px,31vh,300px)}

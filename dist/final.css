@@ -1,0 +1,18 @@
+.timeline-panel{position:relative;isolation:isolate}
+.timeline-panel .milestone-detail h3{font-family:Oswald,Impact,sans-serif;font-weight:500;font-size:clamp(31px,3.3vw,49px);letter-spacing:-.025em;line-height:1.14}
+.timeline-image-wrap:before{pointer-events:none}
+.timeline-panel:focus:not(:focus-visible){outline:none}
+.nature-art{position:absolute;pointer-events:none;z-index:0;color:#d1d6cd}
+.nature-art svg{width:100%;height:auto;display:block}
+.whale-art{width:70%;right:auto;left:15%;top:49%;opacity:.14;transform:none}
+.tree-art{width:54%;left:auto;right:2%;top:60%;opacity:.105;transform:none}
+.message-stories{isolation:isolate}
+@media(max-width:720px){.timeline-panel .milestone-detail h3{font-size:32px}.album-window{overflow:visible;scroll-snap-type:none}.album-track{display:grid;grid-template-columns:minmax(0,1fr);width:100%;gap:38px;transform:none!important}.album-card{width:100%;max-width:none}.album-footer>div,.scroll-hint,#album-counter{display:none}.album-title{font-size:18px}.album-window:focus:not(:focus-visible){outline:none}.whale-art{width:94%;left:3%;right:auto;top:49%;opacity:.075}.tree-art{width:85%;left:auto;right:0;top:64%;opacity:.065}}
+
+.pinned .album-window{perspective:1300px;perspective-origin:50% 50%;padding-top:12px;padding-bottom:38px}
+.pinned .album-card{transform-origin:center center;will-change:transform;backface-visibility:hidden}
+@media(prefers-reduced-motion:reduce){.album-card{transform:none!important;filter:none!important}}
+
+@media(min-width:1100px) and (pointer:fine){.album-art{transition:transform .55s,opacity .4s}.album-track:has(.album-card:hover) .album-card:not(:hover) .album-art{opacity:.58}.album-track:has(.album-card:focus-within) .album-card:not(:focus-within) .album-art{opacity:.7}}
+
+.pinned .album-window{perspective:none}.pinned .album-card{will-change:auto;backface-visibility:visible;transform:none!important;filter:none!important}.album-card .album-art img,.album-card:hover .album-art img{transform:none!important;filter:none!important;image-rendering:auto}
