@@ -1,6 +1,6 @@
 # Gojira — entrega final local
 
-Versão aprovada por Erick Augusto. Em 6 de novembro de 2026, o autor autorizou organizar, versionar e enviar este site ao GitHub. Destino: https://github.com/AugstConsagrado/gojira-concept — repositório privado, sem hospedagem adicional.
+Versão aprovada por Erick Augusto. Em 6 de novembro de 2026, o autor autorizou organizar, versionar e enviar este site ao GitHub. Destino: https://github.com/AugstConsagrado/gojira-concept — repositório público por autorização expressa posterior do autor, sem hospedagem adicional.
 
 ## Resultado aprovado
 
@@ -26,5 +26,6 @@ Quatro testes de conteúdo aprovados. Scripts verificados. Conferências no nave
 
 ## Próxima etapa
 
-Após o envio privado ao GitHub, revisar as condições de uso das imagens antes de uma disponibilização pública. Produzir posteriormente a apresentação UI/UX fiel à versão aprovada. O projeto permanece independente e não oficial, com concepção e direção de Erick Augusto e desenvolvimento com apoio de IA.
+Envio e visibilidade pública concluídos por autorização do autor. Os créditos e as condições de uso dos materiais de terceiros permanecem documentados. Produzir posteriormente a apresentação UI/UX fiel à versão aprovada. O projeto permanece independente e não oficial, com concepção e direção de Erick Augusto e desenvolvimento com apoio de IA.
+
 
