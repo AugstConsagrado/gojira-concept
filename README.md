@@ -1,6 +1,6 @@
 # GOJIRA — Instinto & Consciência
 
-Site editorial independente sobre a banda Gojira, criado como projeto pessoal de portfólio de Erick Augusto. Concepção e direção de Erick. Projeto não oficial, sem vínculo com a banda.
+Criei este site editorial independente como um estudo de direção visual e desenvolvimento front-end inspirado na trajetória da banda Gojira. O projeto explora conteúdo musical, discografia e uma experiência responsiva. É um trabalho de portfólio não oficial, sem vínculo com a banda.
 
 ## Executar
 
